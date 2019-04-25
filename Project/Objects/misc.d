@@ -1,0 +1,10 @@
+.\objects\misc.o: ..\Libraries\misc.c
+.\objects\misc.o: C:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\StdPeriph_Driver\inc\misc.h
+.\objects\misc.o: C:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h
+.\objects\misc.o: C:\Keil_v5\ARM\Pack\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm3.h
+.\objects\misc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\misc.o: C:\Keil_v5\ARM\Pack\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h
+.\objects\misc.o: C:\Keil_v5\ARM\Pack\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h
+.\objects\misc.o: C:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h
+.\objects\misc.o: C:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+.\objects\misc.o: ..\User\RTE_Components.h

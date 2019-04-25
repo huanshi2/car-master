@@ -1,0 +1,11 @@
+.\objects\test.o: ..\User\test.c
+.\objects\test.o: C:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\objects\test.o: C:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\1.1.0\Device\Include\stm32f10x.h
+.\objects\test.o: C:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include\core_cm3.h
+.\objects\test.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\test.o: C:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmInstr.h
+.\objects\test.o: C:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmFunc.h
+.\objects\test.o: C:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\1.1.0\Device\Include\system_stm32f10x.h
+.\objects\test.o: C:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+.\objects\test.o: C:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\1.1.0\Boards\Keil\MCBSTM32C\Middleware\Network\BSD_Server\RTE\RTE_Components.h
+.\objects\test.o: C:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
