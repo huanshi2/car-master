@@ -51,9 +51,9 @@ int main(void)
 	Delay_Initialize();               //=====延时初始化
 	Uart1_Initialize(9600);
 	Led_Initialize();
-	//IIC_Init();                     //=====IIC初始化
-  //MPU6050_initialize();           //=====MPU6050初始化	
-  //DMP_Init();                     //=====初始化DMP     
+	IIC_Init();                     //=====IIC初始化
+  MPU6050_initialize();           //=====MPU6050初始化	
+  DMP_Init();                     //=====初始化DMP     
 	Delay_ms(1000);
 	Motor_Initialize();             //电机初始化
 	
@@ -128,18 +128,28 @@ int main(void)
 	
 	printf("1\r\n");
 	Delay_ms(1000);                 //=====延时等待初始化稳定
-//    EXTI_init();                   //=====MPU6050 5ms定时中断初始化
+  //EXTI_init();                   //=====MPU6050 5ms定时中断初始化
 	printf("2\r\n");
   
 	
 	Motor_EnableDriver(true);
 
-  move_ahead(90,0,1000,60);
+  //move_ahead(90,0,1000,60);
 	
 	
 		Delay_ms(500);
-		One_measurement(mode);
-		One_measurement2(mode);
+	One_measurement(mode);
+	One_measurement2(mode);
+	
+	Read_DMP();
+	Delay_ms(1000);
+	while(1)
+		{
+	  Read_DMP();
+		printf("%8d ,%8d ,%8d \r\n",accel[0],accel[1],accel[2]);
+		printf("%8d ,%8d ,%8d \r\n",gyro[0],gyro[1],gyro[2]);
+    printf("%f ,%f ,%f \r\n",Pitch,Roll,Yaw);
+	  } 	
 	
 
 //  move_ahead(90,0,1200,150);
@@ -199,16 +209,10 @@ int main(void)
 	//DestoryStack(distanceVec);
 	
 	//flash测试
-	STMFLASH_Write(FLASH_SAVE_ADDR,(u16*)TEXT_Buffer,SIZE);
-	Led_On(false);
-	STMFLASH_Read(FLASH_SAVE_ADDR,(u16*)datatemp,SIZE);
-	printf("%s",datatemp);
- 
-  while(1)
-	{
-	Read_DMP();
-	printf("Pitch: %f, Roll: %f, Yaw: %f \r\n",Pitch,Roll,Yaw );
-	}
-	
+	//STMFLASH_Write(FLASH_SAVE_ADDR,(u16*)TEXT_Buffer,SIZE);
+	//Led_On(false);
+	//STMFLASH_Read(FLASH_SAVE_ADDR,(u16*)datatemp,SIZE);
+	//printf("%s",datatemp);
+
 }
 
